@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Linkbrick</title>
+    <link rel="icon" href="lego.png"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="../sets_functions.js"></script>
+    <style>
+    </style>
+</head>
+<body onload="list_products_onload()">
+<main>
+<h2>LEGO Sets</h2>
+    <br>
+    <form action="index.html">
+        <button id="homebuttonwish" type="submit">Home</button>
+    </form>
+    <br>
+<h1>
+    <table id="setstable">
+        <tr>
+            <th id="setID" name="setID">SetID</th>
+            <th id="setname" name="setname">Name</th>
+            <th id="setprice" name="setprice">Price</th>
+            <th id="setpicture" name="setpicture">Picture</th>
+            <th id="shop_button" name="shop_button">Add to cart</th>
+            <th id="remove_button" name="remove_button">Remove from cart</th>
+            <th id="quantity" name="quantity">Quantity</th>
+        </tr>
+    </table>
+
+</h1>
+<h2>
+    <button type="submit" id="order_button" name="order_button" onclick="order();"> Order </button>
+</h2>
+</main>
+<footer>
+    <p>&copy; Linkbrick</p>
+</footer>
+</body>
+</html>

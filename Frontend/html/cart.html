@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Linkbrick</title>
+    <link rel="icon" href="lego.png"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="../cart_functions.js"></script>
+    <style>
+</style>
+</head>
+<body onload="list_orders()">
+<main>
+
+    <h2 >
+        The following items are in your cart:
+    </h2>
+
+    <br>
+<h3>
+    <table id="carttable">
+        <tr>
+            <th id="itemincartname" name="itemincartname">Name</th>
+            <th id="itemincart_pic" name="itemincart_pic">Price</th>
+            <th id="quantity" name="quantity">Quantity</th>
+            <th id="itemincartprice" name="itemincartprice">Price</th>
+            <th id="delincart" name="delincart">Remove From Cart</th>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+
+</h3>
+    <form action="index.html">
+        <button id="homebuttononcart" type="submit">Home</button>
+    </form>
+    <h2>
+        Final price:
+        <p id="final_price"></p>
+        <button type="submit" id="order_button" name="order_button" onclick="order();"> Order </button>
+    </h2>
+    <br>
+</main>
+<footer>
+    <p>&copy; Linkbrick</p>
+</footer>
+</body>
+</html>
